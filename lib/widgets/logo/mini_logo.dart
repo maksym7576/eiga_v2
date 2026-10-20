@@ -3,8 +3,8 @@ import 'package:eiga_v2/app/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
-class MiniAppLogo extends StatelessWidget {
-  const MiniAppLogo({super.key, this.size = 40});
+class MiniLogo extends StatelessWidget {
+  const MiniLogo({super.key, this.size = 40});
 
   final double size;
 

@@ -8,10 +8,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import 'logo/mini_app_logo.dart';
+import '../logo/mini_logo.dart';
 
-class AppTopBar extends ConsumerWidget {
-  const AppTopBar({
+class AppBarBack extends ConsumerWidget {
+  const AppBarBack({
     super.key,
     this.onBack,
     this.actions,
@@ -52,7 +52,7 @@ class AppTopBar extends ConsumerWidget {
             if (actions != null)
               Row(mainAxisSize: MainAxisSize.min, children: actions!,)
             else if (showLogo)
-              const MiniAppLogo(size: 32),
+              const MiniLogo(size: 32),
           ],
         ),
     );

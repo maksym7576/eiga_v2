@@ -16,4 +16,14 @@ class AppTypography {
     letterSpacing: -1.0,
   );
 
+  static TextStyle logoJapanese({required double size}) =>
+      logo.copyWith(
+        fontFamily: fontJp,
+        fontFamilyFallback: const ['Noto Sans JP'],
+        fontSize: size,
+        height: 1,
+        color: AppColors().textPrimary,
+        letterSpacing: 0,
+      );
+
 }
